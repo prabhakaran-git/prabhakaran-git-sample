@@ -1,1 +1,1 @@
-ls -l
+cat /vat/user/lib/
