@@ -1,0 +1,24 @@
+name: System Version Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  check-system-version:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check OS version
+        run: uname -a
+
+      - name: Check Python version
+        run: python3 --version
