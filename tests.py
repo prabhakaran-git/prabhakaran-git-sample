@@ -8,4 +8,4 @@ def test_multiplication():
   assert 10 * 5 == 50
 
 def test_division():
-  assert 10 // 2 == 5, "Assert failed"
+  assert 10 // 2 == 5, "Assert faile2"
